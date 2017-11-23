@@ -41,3 +41,47 @@ html, body{
    min-height: 1px;
    margin:0 2% 20px;
  }
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+      }
+    }
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+ /* Header */
+ header {
+   color:#FFFFFF;
+   background: #34495E;.Rectangle_1 {
+  background-image: -moz-linear-gradient( 38deg, rgb(59,136,200) 0%, rgb(115,187,248) 99%);
+  background-image: -webkit-linear-gradient( 38deg, rgb(59,136,200) 0%, rgb(115,187,248) 99%);
+  background-image: -ms-linear-gradient( 38deg, rgb(59,136,200) 0%, rgb(115,187,248) 99%);
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  width: 1443px;
+  height: 860px;
+  z-index: 9;
+}
+
+}
+
+}
