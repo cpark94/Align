@@ -43,12 +43,22 @@ html, body{
    margin:0 2% 20px;
  }
 
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+ @media (max-width: 500px) {
+
+     .headerimg {
+       width: 90%;
+   }
   }
 
+  .signinsize {
+      width: 200px;
+      position:center;
+  }
+  .signupsize {
+      width: 200px;
+      position:center;
+  }
+}
 
   @media (min-width: 768px) {
     .container {
