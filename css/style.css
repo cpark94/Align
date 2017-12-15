@@ -45,18 +45,31 @@ html, body{
 
  @media (max-width: 500px) {
 
+
      .headerimg {
        width: 200px;
    }
 
 
-  .signinsize {
+    .signinsize {
       width: 400px;
-      margin-top:-70px;
-      padding-left: 10px;
+      margin-top:-60px;
+
+
   }
 
+    .signinsize li {
+      padding-left: 40px;
+  }
+  .site-logo>img {
+   width: 100px;
+   display: block;
+ }
+  .signinpos {
+    padding-left: -30px;
+  }
 }
+
 
   @media (min-width: 768px) {
     .container {
@@ -349,7 +362,7 @@ html, body{
    footer .right-footer-block {
      background-color: #3b88c8;
    }
-   footer .logo{
+   footer .logo {
      padding: 2em 0 2em 1.5em;
    }
  }
