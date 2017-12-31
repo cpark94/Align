@@ -402,6 +402,7 @@ html, body{
    display:block;
    text-align: center;
  }
+
  .left-nav .items {
    padding:0 6%;
  }
@@ -578,3 +579,7 @@ html, body{
    line-height: 18px;
    margin:5px 0 0;
  }
+
+ a:active {
+    background-color: darkblue;
+}
