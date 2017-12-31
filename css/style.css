@@ -44,30 +44,38 @@ html, body{
  }
 
  @media (max-width: 500px) {
-
-
-     .headerimg {
+  .headerimg {
        width: 200px;
    }
 
 
-    .signinsize {
+  .signinsize {
       width: 400px;
       margin-top:-60px;
     }
 
-    .signinsize li {
+  .signinsize li {
       padding-left: 40px;
   }
   .site-logo>img {
    width: 100px;
    display: block;
+
  }
   .signinpos {
     padding-left: -30px;
   }
-  .link-block middle-footer-block one-third
-  }
+
+  .copyright-block {
+  margin-bottom: -5px;
+  background-color: #3b88c8;
+}
+  .footer-bottom {
+  margin-top: -12px;
+  margin-right: 38px;
+  background-color: #3b88c8;
+  padding-top: 2px;
+}
 }
 
 
@@ -222,6 +230,7 @@ html, body{
    font-family: "Oxygen", Helvetica, Arial, sans-serif;
    font-weight: 600;
    text-transform: uppercase;
+   color:#FFFFFF;
    background: #3b88c8;
    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
    left:0;
@@ -281,7 +290,7 @@ html, body{
    color:#FFFFFF;
    text-align: left;
    font-style: italic;
-   background:#34495E;
+   background:#3b88c8;
    position: relative;
    padding:30px;
    width:auto;
@@ -296,7 +305,7 @@ html, body{
    width: 0;
    position: absolute;
    pointer-events: none;
-   border-top-color: #34495E;
+   border-top-color: #3b88c8;
    border-width: 10px;
    margin-left: -10px;
  }
@@ -319,7 +328,7 @@ html, body{
  footer {
    background-color: #34495E;
    background-image: linear-gradient(to top,
-      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
+      #73bbf8 0%, #73bbf8 50%, #3b88c8 50%, #3b88c8 100%);
    color: #FFFFFF;
    height: 150px;
    position: relative;
@@ -341,19 +350,19 @@ html, body{
    text-decoration: none;
  }
  footer .right-footer-block {
-   background-color: transparent;
+   background-color: #transparent;
  }
  footer .logo{
    padding: 0em 0;
-   margin: -10px auto;
-
+   margin: 0px auto;
    display: block;
  }
+
  @media (min-width: 992px){
    footer{
-     background-color: #3498DB;
+     background-color: #73bbf8;
      background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
+        #73bbf8 0%, #73bbf8 33.33337%, #3b88c8 33.33337%, #3b88c8 100%);
      height: 100px;
    }
    footer p, footer nav ul{
@@ -361,7 +370,7 @@ html, body{
      text-align: left;
    }
    footer .right-footer-block {
-     background-color: #3498DB;
+     background-color: #73bbf8;
    }
    footer .logo{
      padding: 2em 0 2em 1.5em;
@@ -372,12 +381,4 @@ html, body{
 
    }
 
-   .container footer-nav-block {
-     margin-top: -10px;
    }
-
-
-
-
-
-}
