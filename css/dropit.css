@@ -8,64 +8,99 @@
  */
 
 /* These styles assume you are using ul and li */
+
 .dropit {
-    list-style: none;
-	padding: 0;
-	margin: 15px 0 0;
-  float:right;
-  display:in-line block;
+  list-style: none;
+  padding: 0;
+  /*margin: 0;*/
+  margin: 15px 0 0;
+  float: right;
+  display: inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
+
+.dropit .dropit-trigger {
+  position: relative;
+}
+
 .dropit .dropit-submenu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    z-index: 1000;
-    display: none;
-    min-width: 100px;
-    list-style: none;
-    width: 100px;
-    padding: 20px;
-	  margin: 20px 0 0;
+  position: absolute;
+  top: 100%;
+  /*left: 0;*/
+  right: 0;
+  /* dropdown left or right */
+  z-index: 1000;
+  display: none;
+  /*min-width: 150px;*/
+  min-width: 100px;
+  list-style: none;
+  /*padding: 0;*/
+  padding: 20px;
+  /*margin: 0;*/
+  margin: 20px 0 0;
 }
+
+.settings .dropit .dropit-submenu {
+  bottom: 100%;
+  top: 0;
+  margin: -165px 0 0;
+  min-width: 160px;
+  text-align: left;
+}
+
+.settings .dropit .dropit-submenu li {
+  float: left;
+}
+
 .dropit .dropit-open .dropit-submenu {
   display: block;
-  background: #FFFFFF;
-   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
-   border-radius: 4px;
-   width: 100px;
+  background: #FFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.30);
+  border-radius: 4px;
+}
 
+.settings .dropit .dropit-open .dropit-submenu::after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 8px 8px;
+  border-color: #FFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 164px;
+  right: 8px;
+  transform: rotateX(-180deg);
 
 }
 
-.dropit .dropit-open .dropit-submenu:after {
- content: " ";
- position: absolute;
- border-style: solid;
- border-width: 0 8px 8px;
- border-color: #FFFFFF transparent;
- display: block;
- width: 0px;
- z-index: 1;
- top: -8px;
- right: 10px;
+.dropit .dropit-open .dropit-submenu::after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 8px 8px;
+  border-color: #FFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1 top, -8px;
+  right: 10px;
 }
+
 .dropit .dropit-open .dropit-submenu li {
- display: block;
- margin-bottom: 20px;
-
+  display: block;
+  margin-bottom: 20px;
 }
+
 .dropit .dropit-open .dropit-submenu li:last-child {
- margin-bottom: 0px;
-}
-.dropit .dropit-open .dropit-submenu li a {
- color:#34495E;
- text-decoration: none;
- font-family: "Oxygen", Helvetica, Arial, sans-serif;
- font-weight:100;
+  margin-bottom: 0px;
 }
 
-/* Settings */
+.dropit .dropit-open .dropit-submenu li a {
+  color: #34495E;
+  text-decoration: none;
+  font-family: "Asap", sans-serif;
+  font-weight: 100;
+}
+
 .settingsmenu {
-  margin-top: -1px;
+    margin-top: -1px;
 }
