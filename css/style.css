@@ -653,6 +653,6 @@ html, body{
    margin:5px 0 0;
  }
 
- a:active {
-    background-color: darkblue;
-}
+ .active { background-color: #3b88c8; }
+ /* to override the existing css for "a" tag */
+ #sub-header .active a{ color: #3b88c8; }
